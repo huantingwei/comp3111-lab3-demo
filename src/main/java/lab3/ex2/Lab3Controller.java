@@ -5,6 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 public class Lab3Controller {
 
@@ -13,10 +14,13 @@ public class Lab3Controller {
 
     @FXML
     private Label label1;
+    
+    @FXML
+    private TextField textfield1;
 
     @FXML
     void buttonPressed(ActionEvent event) {
-
+    	label1.setText(textfield1.getText());
     }
 
 }
